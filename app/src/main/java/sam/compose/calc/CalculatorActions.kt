@@ -1,7 +1,7 @@
 package sam.compose.calc
 
 sealed class CalculatorActions{
-    data class Number(val number: String)
+    data class Number(val number: String): CalculatorActions()
     data class Operation(val calculatorOperations: CalculatorOperations): CalculatorActions()
     object Clear: CalculatorActions()
     object Delete: CalculatorActions()

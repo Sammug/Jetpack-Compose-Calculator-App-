@@ -40,7 +40,7 @@ fun Calculator(
         ) {
             /**Calculator display area/text*/
             Text(
-                text = state.firstNumber + (state.operation ?: "") + state.secondNumber,
+                text = state.firstNumber + (state.operation?.operator ?: "") + state.secondNumber,
                 textAlign = TextAlign.End,
                 modifier = Modifier
                     .fillMaxWidth()
