@@ -1,6 +1,6 @@
 package sam.compose.calc
 
-sealed class CalculatorOperations(operator: String){
+sealed class CalculatorOperations(val operator: String){
     object Add: CalculatorOperations("+")
     object Subtract: CalculatorOperations("-")
     object Divide: CalculatorOperations("/")
